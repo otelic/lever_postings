@@ -1,0 +1,116 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.lever.co/v0/postings/leverdemo
+    body:
+      encoding: UTF-8
+      string: key=invalidkey
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sun, 16 Aug 2015 17:30:12 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Length:
+      - '55'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        Cannot POST /v0/postings/leverdemo
+    http_version: 
+  recorded_at: Sun, 16 Aug 2015 17:30:12 GMT
+- request:
+    method: post
+    uri: https://api.lever.co/v0/postings/leverdemo?key=invalidkey
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sun, 16 Aug 2015 18:01:53 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Length:
+      - '68'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        Cannot POST /v0/postings/leverdemo?key=invalidkey
+    http_version: 
+  recorded_at: Sun, 16 Aug 2015 18:01:53 GMT
+- request:
+    method: post
+    uri: https://api.lever.co/v0/postings/leverdemo/491029da-9b63-4208-83f6-c976b6fe2ac5?key=invalidkey
+    body:
+      encoding: UTF-8
+      string: id=491029da-9b63-4208-83f6-c976b6fe2ac5
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 16 Aug 2015 18:05:23 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":false,"error":"Invalid api key"}'
+    http_version: 
+  recorded_at: Sun, 16 Aug 2015 18:05:23 GMT
+recorded_with: VCR 2.9.3

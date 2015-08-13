@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.lever.co/v0/postings/leverdemo/6d5cbe7f-e551-4ae1-b052-08a48f651993?mode=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 14 Aug 2015 21:08:57 GMT
+      Etag:
+      - W/"4e5-1459186969"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Length:
+      - '713'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6IjZkNWNiZTdmLWU1NTEtNGFlMS1iMDUyLTA4YTQ4ZjY1MTk5MyIs
+        InRleHQiOiJPcGVyYXRpb25zIE1hbmFnZXIiLCJkZXNjcmlwdGlvbiI6Ikxl
+        dmVyIGlzIGEgbW9kZXJuIHdlYmFwcCBmb3IgaGlyaW5nLiBIYXZpbmcgcmVj
+        ZW50bHkgcmFpc2VkIGEgc2VyaWVzIEEsIHdlIGFyZSBnZXR0aW5nIHJlYWR5
+        IHRvIGVudGVyIGEgaHlwZXItZ3Jvd3RoIHBoYXNlIHdpdGggbmV3IGVtcGxv
+        eWVlcyBvbmJvYXJkaW5nIHdlZWtseS4gXG5cbldlIGFyZSBhIEIyQiBjb21w
+        YW55IGJ1aWxkaW5nIGVudGVycHJpc2Ugc29mdHdhcmUgdGhhdCBwcmlvcml0
+        aXplcyBjb2xsYWJvcmF0aXZlIGhpcmluZyBhbmQgdGVhbSBlbmdhZ2VtZW50
+        LiBMZXZlciBhaW1zIHRvIGJ1aWxkIGEgcHJvZHVjdCB0aGF0IGhlbHAgdGVh
+        bXMgbWFuYWdlIHBlb3BsZTsgZnJvbSB0aGUgaGlyaW5nIHN0YWdlIGFuZCBi
+        ZXlvbmQsIGFuZCB3ZSB3YW50IHRvIGZpbmQgc29tZW9uZSB3aG8gYmVsaWV2
+        ZXMgaW4gYSBmdXR1cmUgb2YgSFIgdGhhdCBsb29rcyB2ZXJ5IGRpZmZlcmVu
+        dCB0aGFuIHRoZSB3YXkgaXQgaXMgdG9kYXkuIFxuXG5PdXIgcHJvZHVjdCBm
+        b2N1cyBpcyBtaXJyb3JlZCBieSB0aGUgdmFsdWUgdGhhdCB3ZSBwbGFjZSBv
+        biBjb2xsYWJvcmF0aW9uIHdpdGhpbiBhbmQgYW1vbmcgb3VyIHRlYW1zIC0g
+        ZnJvbSBQcm9kdWN0IHRvIEN1c3RvbWVyIFN1Y2Nlc3MgdG8gTGVhZGVyc2hp
+        cCAtIHdlIGFsbCBzaXQgb24gdGhlIHNhbWUgZmxvb3IgYW5kIHdvcmsgaGFy
+        ZCB0byBlbGV2YXRlIGVhY2ggb3RoZXLigJlzIHdvcmsuIFRoZXJlIGlzIGh1
+        Z2UgZ3Jvd3RoIHBvdGVudGlhbCBpbiB0aGlzIHJvbGUsIGFzIHRoZSB0ZWFt
+        IGlzIGhpZ2hseSB0ZWNobmljYWwgYW5kIHByb2R1Y3QgZm9jdXNlZCBhbmQg
+        d2UgYXJlIGNvbnN0YW50bHkgdGVhY2hpbmcvbGVhcm5pbmcgZnJvbSBvbmUg
+        YW5vdGhlci4gXG4iLCJsaXN0cyI6W10sImNyZWF0ZWRBdCI6MTQwNDM0NDIw
+        MjUwNiwiaG9zdGVkVXJsIjoiaHR0cHM6Ly9qb2JzLmxldmVyLmNvL2xldmVy
+        ZGVtby82ZDVjYmU3Zi1lNTUxLTRhZTEtYjA1Mi0wOGE0OGY2NTE5OTMiLCJh
+        cHBseVVybCI6Imh0dHBzOi8vam9icy5sZXZlci5jby9sZXZlcmRlbW8vNmQ1
+        Y2JlN2YtZTU1MS00YWUxLWIwNTItMDhhNDhmNjUxOTkzL2FwcGx5IiwiY2F0
+        ZWdvcmllcyI6eyJ0ZWFtIjoiT3BlcmF0aW9ucyIsImxvY2F0aW9uIjoiU2Fu
+        IGZyYW5jaXNjbyIsImNvbW1pdG1lbnQiOiJGdWxsLXRpbWUifX0=
+    http_version: 
+  recorded_at: Fri, 14 Aug 2015 21:08:57 GMT
+recorded_with: VCR 2.9.3

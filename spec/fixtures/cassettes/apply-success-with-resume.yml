@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.lever.co/v0/postings/leverdemo/491029da-9b63-4208-83f6-c976b6fe2ac5
+    body:
+      encoding: UTF-8
+      string: comments=Comments&email=withresume%40example.com&id=491029da-9b63-4208-83f6-c976b6fe2ac5&key=TpOje1LNAqrS5Uw0PCZk&name=Test+Application&org=Test+Organization&phone=415-555-5555&resume=%23%3CFile%3A0x007fc2c336ec18%3E&silent=true&urls%5Bgithub%5D=https%3A%2F%2Fgithub.com%2Flever&urls%5Btwitter%5D=https%3A%2F%2Ftwitter.com%2Flever
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 16 Aug 2015 17:30:11 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Length:
+      - '98'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":false,"error":"You need an API key. Please contact support@lever.co
+        for a key"}'
+    http_version: 
+  recorded_at: Sun, 16 Aug 2015 17:30:11 GMT
+- request:
+    method: post
+    uri: https://api.lever.co/v0/postings/leverdemo/491029da-9b63-4208-83f6-c976b6fe2ac5?key=TpOje1LNAqrS5Uw0PCZk
+    body:
+      encoding: UTF-8
+      string: comments=Comments&email=withresume%40example.com&id=491029da-9b63-4208-83f6-c976b6fe2ac5&key=TpOje1LNAqrS5Uw0PCZk&name=Test+Application&org=Test+Organization&phone=415-555-5555&resume=%23%3CFile%3A0x007fe512958f18%3E&silent=true&urls%5Bgithub%5D=https%3A%2F%2Fgithub.com%2Flever&urls%5Btwitter%5D=https%3A%2F%2Ftwitter.com%2Flever
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 16 Aug 2015 17:56:05 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":false,"error":"Invalid api key"}'
+    http_version: 
+  recorded_at: Sun, 16 Aug 2015 17:56:05 GMT
+- request:
+    method: post
+    uri: https://api.lever.co/v0/postings/leverdemo/491029da-9b63-4208-83f6-c976b6fe2ac5?key=XLOMz5pc9z3bc5OqtZ92AZH%20Zrwlw9Sb%20aB6fcX5bcoOL7sk
+    body:
+      encoding: UTF-8
+      string: comments=Comments&email=withresume%40example.com&id=491029da-9b63-4208-83f6-c976b6fe2ac5&key=XLOMz5pc9z3bc5OqtZ92AZH%2BZrwlw9Sb%2BaB6fcX5bcoOL7sk&name=Test+Application&org=Test+Organization&phone=415-555-5555&resume=%23%3CFile%3A0x007ff3da931e50%3E&silent=true&urls%5Bgithub%5D=https%3A%2F%2Fgithub.com%2Flever&urls%5Btwitter%5D=https%3A%2F%2Ftwitter.com%2Flever
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Age:
+      - '0'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 16 Aug 2015 17:57:17 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Length:
+      - '58'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":false,"error":"Invalid api key"}'
+    http_version: 
+  recorded_at: Sun, 16 Aug 2015 17:57:17 GMT
+recorded_with: VCR 2.9.3

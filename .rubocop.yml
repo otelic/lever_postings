@@ -1,0 +1,16 @@
+Style/StringLiterals:
+  Enabled: false
+Metrics/LineLength:
+  Max: 100
+
+# Allow for commas at the end of multi-line literals.
+#
+# Example:
+# {
+#   body: "Hello World",
+# }
+#
+# This style protects against forgetting to add a comma and makes git diffs
+# smaller.
+TrailingComma:
+  EnforcedStyleForMultiline: comma
