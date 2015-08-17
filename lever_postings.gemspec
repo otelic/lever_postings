@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "faraday", "~> 0.9"
   spec.add_dependency "multi_json", "~> 1.10"
-  spec.add_dependency "hashie", ">= 2.1"
+  spec.add_dependency "hashie", "~> 3.0"
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "pry", "~> 0.10"
