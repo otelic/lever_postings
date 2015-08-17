@@ -101,7 +101,7 @@ To use the POST API you need an API key. For now, this must be configured by a L
 
 ```ruby
 LeverPostings.apply "<site name, ex: leverdemo>", "<API key>", {
-  id: "<specific job posting ID>",
+  posting_id: "<specific job posting ID>",
   name: "Spock",
   email: "spock@yourcompany.com",
   resume: File.open("/path/to/resume.ext"),

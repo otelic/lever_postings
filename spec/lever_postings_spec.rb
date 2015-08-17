@@ -14,7 +14,7 @@ describe LeverPostings do
             response = LeverPostings.apply "leverdemo",
               "TpOje1LNAqrS5Uw0PCZk",
               {
-                id: "491029da-9b63-4208-83f6-c976b6fe2ac5",
+                posting_id: "491029da-9b63-4208-83f6-c976b6fe2ac5",
                 name: "Test Application",
                 email: "withresume@example.com",
                 resume: File.open(File.expand_path('../fixtures/resume.txt', __FILE__)),
@@ -37,7 +37,7 @@ describe LeverPostings do
             response = LeverPostings.apply "leverdemo",
               "TpOje1LNAqrS5Uw0PCZk",
               {
-                id: "491029da-9b63-4208-83f6-c976b6fe2ac5",
+                posting_id: "491029da-9b63-4208-83f6-c976b6fe2ac5",
                 name: "Test Application",
                 email: "withoutresume@example.com",
                 phone: "415-555-5555",
@@ -59,7 +59,7 @@ describe LeverPostings do
           response = LeverPostings.apply "leverdemo",
             "TpOje1LNAqrS5Uw0PCZk",
             {
-              id: "491029da-9b63-4208-83f6-c976b6fe2ac5",
+              posting_id: "491029da-9b63-4208-83f6-c976b6fe2ac5",
             }
           expect(MultiJson.load(response.body, symbolize_keys: true)[:ok]).to eq false
           expect(response.status).to eq 200
@@ -71,7 +71,7 @@ describe LeverPostings do
           response = LeverPostings.apply "leverdemo",
             "invalidkey",
             {
-              id: "491029da-9b63-4208-83f6-c976b6fe2ac5",
+              posting_id: "491029da-9b63-4208-83f6-c976b6fe2ac5",
             }
           expect(MultiJson.load(response.body, symbolize_keys: true)[:ok]).to eq false
           expect(response.status).to eq 403

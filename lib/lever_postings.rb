@@ -10,7 +10,7 @@ require "lever_postings/version"
 module LeverPostings
   def self.apply(account, api_key, params)
     postings_api = LeverPostings::Client.new("postings", account)
-    posting_id = params[:id]
+    posting_id = params[:posting_id]
     results = postings_api.post(posting_id, { api_key: api_key }, params)
     results
   end
