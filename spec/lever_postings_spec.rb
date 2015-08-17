@@ -22,7 +22,7 @@ describe LeverPostings do
                 org: "Test Organization",
                 urls: { github: "https://github.com/lever", twitter: "https://twitter.com/lever" },
                 comments: "Comments",
-                silent: true
+                silent: true,
               }
             # DEBUG: puts pp response
             expect(MultiJson.load(response.body, symbolize_keys: true)[:ok]).to eq false
@@ -44,7 +44,7 @@ describe LeverPostings do
                 org: "Test Organization",
                 urls: { github: "https://github.com/lever", twitter: "https://twitter.com/lever" },
                 comments: "Comments",
-                silent: true
+                silent: true,
               }
             expect(MultiJson.load(response.body, symbolize_keys: true)[:ok]).to eq false
             expect(response.status).to eq 200
@@ -256,7 +256,7 @@ describe LeverPostings do
             if location != @previous_location
               expect(@locations_visited).to_not include(location)
               @previous_location = location
-              @locations_visited = @locations_visited | [location]
+              @locations_visited |= [location]
             else
               expect(@locations_visited).to include(location)
             end

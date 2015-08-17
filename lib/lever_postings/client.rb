@@ -24,10 +24,7 @@ module LeverPostings
     def request(method, path, options = {}, params = {})
       path = path && path != "" ? "/#{path}" : nil
       url = "#{api}/#{account}#{path}"
-
-      if options.key?(:api_key)
-        url = url + "?key=#{options[:api_key]}"
-      end
+      url += "?key=#{options[:api_key]}" if options.key?(:api_key)
 
       if method == :post
         response = connection.post(url, params)

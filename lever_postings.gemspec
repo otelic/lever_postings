@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Sean Abrahams"]
   spec.email         = ["abrahams@gmail.com"]
 
-  spec.summary       = %q{Ruby library for accessing Lever.co's Postings API}
-  spec.description   = %q{Ruby library for accessing Lever.co's Postings API}
+  spec.summary       = %q(Ruby library for accessing Lever.co's Postings API)
+  spec.description   = %q(Ruby library for accessing Lever.co's Postings API)
   spec.homepage      = "https://github.com/otelic/lever_postings"
   spec.license       = "MIT"
   spec.required_ruby_version = '>= 1.9.3'

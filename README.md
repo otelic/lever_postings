@@ -1,6 +1,6 @@
 # Lever Postings API
 
-A Ruby client for [Lever.co's Postings API](https://github.com/lever/postings-api). This gem is limited to the functionality of Lever.co's Postings API (which is separate from their more comprehensive Lever API) and is intended to be used for the display of, and application to, jobs on your own web site. For more information see: https://github.com/lever/postings-api
+A Ruby client for [Lever.co's Postings API](https://github.com/lever/postings-api). This gem is limited to the functionality of Lever.co's Postings API (which is separate from their more comprehensive Lever API) and is intended to be used for the display of, and application to, jobs from your own web site. For more information see: https://github.com/lever/postings-api
 
 ## Installation
 
@@ -34,7 +34,7 @@ LeverPostings.postings "<site name, ex: leverdemo>", id: "<specific job posting 
 
 Job postings for a company with query parameters:
 ```ruby
-LeverPostings.postings "<site name, ex: leverdemo>", team: "engineer", location: "San Francisco"
+LeverPostings.postings "<site name, ex: leverdemo>", team: "Engineering", location: "San Francisco"
 ```
 
 | Query parameter | Description                   |
@@ -49,7 +49,7 @@ LeverPostings.postings "<site name, ex: leverdemo>", team: "engineer", location:
 | group           | May be one of `location`, `commitment`, or `team`. Returns results grouped by category |
 
 
-#### Posting Result Example
+#### Postings Result Example
 
 JSON results are parsed and converted into Hashie::Mash objects for property style access to data (posting.text instead of posting[:text]).
 
